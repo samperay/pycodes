@@ -1,8 +1,11 @@
-""" Prints the system information """
+""" 
+Prints the system information relates to CPU
+Disk, Memory, Network IP address, System Boot time  ..etc
+ 
+"""
 
 import platform
 import datetime
-
 import psutil
 
 print("Computer Name:",platform.node())
@@ -48,7 +51,7 @@ print("\nNetwork Information")
 print("--------------------")
 print("Network Interfaces:", intcount)
 
-print("Interface names and IP")
+print("\nInterface names and IP:\n")
 for intips in netstats.keys():
     print(intips,":",netstats[intips][0][1])
 
@@ -65,4 +68,3 @@ for userlogcount in psutil.users():
     s_time = userlogcount[3]
     s_time_format = datetime.datetime.fromtimestamp(s_time).strftime("%Y-%m-%d %H:%M:%S")
     print("username:",username,"| Login time:",s_time_format)
-
