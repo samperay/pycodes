@@ -37,10 +37,10 @@ print("System Boot time:",boottimeformat)
 
 # To Print File system
 totalDisks = psutil.disk_partitions(all=False)
-print("\nFile System information")
+print("\nDisk File System information")
 print("-----------------------")
 for line in totalDisks:
-    print(line[0])
+    print(line[0],":",line[1])
 
 # To print Network information
 netstats = psutil.net_if_addrs()
