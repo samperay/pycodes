@@ -5,3 +5,7 @@ Here are some of the detailed information about the programs I have written. I d
 In each program at the beginning, comments are marked to know what this code would be used for.
 
 These examples are being written/tested in python3.5
+
+getsysinfo.py - Provides the basic information on the system
+
+search_replace.py - Search for a particular pattern in a file, on success take a backup and append in same file
