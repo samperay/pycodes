@@ -38,7 +38,7 @@ def dirlist(path):
 if __name__ == '__main__':
     paths = input("Enter path to display files & directories: ")
     if os.path.isdir(paths):
-        print("1. Do you wish to list files,directory relatively?\n2. Do you wish to list only files ? \n3. Do you wish to list only directoroes ?")
+        print("1. Do you wish to list files,directory\n2. Do you wish to list only files ? \n3. Do you wish to list only directoroes ?")
         choice = input("Enter your choice: ")
         if choice == '1':
             print("\nRelative path for files and directories")
