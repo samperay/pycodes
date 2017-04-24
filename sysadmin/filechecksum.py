@@ -3,7 +3,8 @@ Compare two files are similar or not using MD5 digest
 and values returning from their checksum.
 
 reads the file creates checksum of file line by line and then
-returns complete checksum total for file 
+returns complete checksum total for file.
+
 """
 import hashlib
 
