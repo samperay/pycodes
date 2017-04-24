@@ -1,19 +1,19 @@
 """Finding duplicate files in a directory
 
-This program will receive a folder or list of folders
-to scan, which is going to traverse the directories given
-and find the duplicated files in folder
+This program would take a directory as a input and will create 
+a dictionary of hash value of files with their paths as a value.
+Join two dictionaries and check for duplicates and print result.
 
 """
-import os, sys
+import os,sys
 import hashlib
 
-
-def findDup(parentFolder):
-    # Dups in format {hash:[names]}
+def findDup(mainfolder):
+    """ Create a dictionary and add key as hash value and value with
+    filename. if hash key append to dictionary or if no entry add."""
     dups = {}
-    for dirname, subdirs, filenames in os.walk(parentFolder):
-        print('Scanning %s...' % dirname)
+    for dirname, subdirs, filenames in os.walk(mainfolder):
+        print('checking  %s directory ...' %dirname)
         for eachfile in filenames:
             # Get complete path of each file
             path = os.path.join(dirname, eachfile)
@@ -26,52 +26,43 @@ def findDup(parentFolder):
                 dups[file_hash] = [path]
     return dups
 
-
-# Joins two dictionaries
 def joinDicts(dict1, dict2):
+    """ Join two dictionaries as together"""
     for key in dict2.keys():
         if key in dict1:
             dict1[key] = dict1[key] + dict2[key]
         else:
             dict1[key] = dict2[key]
 
-
 def hashfile(path, blocksize=65536):
+    """ Create a hash value of each file and return"""
     afile = open(path,'rb')
     hasher = hashlib.md5()
     buf = afile.read(blocksize)
     while len(buf) > 0:
         hasher.update(buf)
         buf = afile.read(blocksize)
-    afile.close()
     return hasher.hexdigest()
 
-
 def printResults(dict1):
+    """ Prints the results for duplicates """
     results = list(filter(lambda x: len(x) > 1, dict1.values()))
     if len(results) > 0:
-        print('Duplicates Found:')
-        print('The following files are identical. The name could differ, but the content is identical')
-        print('___________________')
+        print('\nDuplicates Found.. names could differ but content identical ..')
         for result in results:
             for subresult in result:
                 print('%s' % subresult)
-            print('___________________')
     else:
         print('No duplicate files found.')
 
-
 if __name__ == '__main__':
         dups = {}
-        readdir= input("Enter directory or multiple directory using comma(,): ")
-        folders = readdir.split(',')
-        #folders = sys.argv[1:]
-        for folder in folders:
-            # check if the directory exists and if so iterate the folders
-            if os.path.isdir(folder):
-                # Find the duplicated files and append them to the dups
-                joinDicts(dups, findDup(folder))
-            else:
-                print('Invalid Folder:%s' %folder)
-                sys.exit()
-            printResults(dups)
+        folders= input("Enter directory to find out duplicates: ")
+        # check if the directory exists and if so iterate the folders
+        if os.path.isdir(folders):
+        # Find the duplicated files and append them to the dups
+            joinDicts(dups, findDup(folders))
+        else:
+            print('Invalid Folder:%s' %folders)
+            sys.exit()
+        printResults(dups)
