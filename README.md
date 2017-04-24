@@ -4,8 +4,13 @@ Here are some of the detailed information about the programs I have written. I d
 
 In each program at the beginning, comments are marked to know what this code would be used for.
 
-These examples are being written/tested in python3.5
+These examples are being written/tested in python3.5 in Fedora core 25. All programs related to Linux system administration would be kept in sysadmin folder
+Few other programs are just for practice on using python code.
+
+sysadmin:
 
 getsysinfo.py - Provides the basic information on the system
-
 search_replace.py - Search for a particular pattern in a file, on success take a backup and append in same file
+find_duplicates.py - lists duplicate files from folder specified
+filechecksum.py - compare files using checksum
+list_files_dirs.py - choice to provide either listing of files and directories
