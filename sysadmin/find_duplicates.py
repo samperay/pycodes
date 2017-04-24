@@ -66,3 +66,4 @@ if __name__ == '__main__':
             print('Invalid Folder:%s' %folders)
             sys.exit()
         printResults(dups)
+
