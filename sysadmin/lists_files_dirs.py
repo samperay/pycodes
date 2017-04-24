@@ -60,6 +60,3 @@ if __name__ == '__main__':
             exit(1)
     else:
         print("No such path or directory .. exiting")
-
-
-
