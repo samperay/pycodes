@@ -1,4 +1,4 @@
-""" The script would be used to search a particular pattern and 
+""" The program would be used to search a particular pattern and 
 from the file are-write into same original file. 
 We would append the original file with our required
 contents to the file and close.
