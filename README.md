@@ -9,12 +9,12 @@ Few other programs are just for practice on using python code.
 
 sysadmin:
 
-getsysinfo.py - Provides the basic information on the system
+*getsysinfo.py* Provides the basic information on the system
 
-search_replace.py - Search for a particular pattern in a file, on success take a backup and append in same file
+*search_replace.py* Search for a particular pattern in a file, on success take a backup and append in same file
 
-find_duplicates.py - lists duplicate files from folder specified
+*find_duplicates.py* lists duplicate files from folder specified
 
-filechecksum.py - compare files using checksum
+*filechecksum.py* - compare files using checksum
 
 list_files_dirs.py - choice to provide either listing of files and directories
