@@ -15,6 +15,6 @@ sysadmin:
 
 *find_duplicates.py* lists duplicate files from folder specified
 
-*filechecksum.py* - compare files using checksum
+*filechecksum.py* compare files using checksum
 
-list_files_dirs.py - choice to provide either listing of files and directories
+*list_files_dirs.py* choice to provide either listing of files and directories
