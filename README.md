@@ -19,3 +19,14 @@ sysadmin:
 
 **list_files_dirs.py** choice to provide either listing of files and directories
 
+**backup_compress.py** make backup copy of folder and compress .gzip format
+
+**deletefilesNdays.py** remove files older than X days
+
+**remotessh.py** execute command in remote through SSH 
+
+**rsync.py** sync two directories and email when synced
+
+**searchlogs.py** search for a pattern in log folders
+
+**yumlocalrepo.py** create local repository on Redhat/Centos Linux
