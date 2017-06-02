@@ -1,9 +1,6 @@
 from os import listdir
 from os.path import isfile,join
 
-# Create list of all files 
-
-
 # By default, all the logs location on the Linux system would be 
 # at /var/log and hence by default would chosse those ..
 
