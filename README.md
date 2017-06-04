@@ -30,3 +30,5 @@ sysadmin:
 **searchlogs.py** search for a pattern in log folders
 
 **yumlocalrepo.py** create local repository on Redhat/Centos Linux
+
+**smbversionchk.py** check the minor version of samba and add necessary patch if required
