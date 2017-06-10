@@ -13,7 +13,8 @@ def verifyParameter():
                     print("Info:'{}' already exists in '{}'".format(param, configfile))
                     return 1
                 else:
-                    return 0    except FileNotFoundError as err:
+                    return 0
+    except FileNotFoundError as err:
         print(err)
         return 0
 
@@ -37,6 +38,6 @@ if __name__ == '__main__':
         exit(0)
         # check file exists if so append entry
     elif writeParameter():
-        srestartService()
+        restartService()
 
 
