@@ -32,3 +32,5 @@ sysadmin:
 **yumlocalrepo.py** create local repository on Redhat/Centos Linux
 
 **smbversionchk.py** check the minor version of samba and add necessary patch if required
+
+**addparamconfig.py** adds the parameter to apache config without duplicating any parameter
