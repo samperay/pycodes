@@ -34,3 +34,12 @@ sysadmin:
 **smbversionchk.py** check the minor version of samba and add necessary patch if required
 
 **addparamconfig.py** adds the parameter to apache config without duplicating any parameter
+
+
+sorting:
+
+simple scripts written for sorting alogorithms using lists
+
+**bubble.py** bubble sort alogorithm
+
+
