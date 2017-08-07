@@ -5,7 +5,7 @@
 # only two elements
 
 
-unordered_list = ['5','4','2']
+unordered_list = ['8','4','2']
 
 iteration_number = len(unordered_list)-1
 
@@ -16,3 +16,4 @@ for i in range(iteration_number):
            unordered_list[j] = unordered_list[j+1]
            unordered_list[j+1] = temp
 print(unordered_list)
+
