@@ -1,23 +1,26 @@
 """ this would copy files from the remote machine to local machine """
 
 import paramiko
+import platform
+import os
 from scp import SCPClient
-
-
+import  subprocess
 
 def createSSHClient(server, port, user,sshkey):
     client = paramiko.SSHClient()
     client.load_system_host_keys()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    client.connect(server, port, user, sshkey)
+    client.connect(server,port,user,sshkey)
     return client
 
-
 def copyRemoteToLocal(hostlist,port,user,sshkey):
+    copyfiles = ['/etc/passwd', '/etc/resolv.conf']
     for server in hostlist:
+        os.mkdir('/tmp/'+server)
         ssh=createSSHClient(server,port,user,sshkey)
         scp = SCPClient(ssh.get_transport())
-        scp.get('/home/sunlnx/rhelbaseimg','/tmp/')
+        for file in copyfiles:
+            scp.get(file,'/tmp/'+server)
 
 def main():
     """Define all tha parameters in the main function"""
@@ -25,6 +28,8 @@ def main():
     port = 22
     user = 'sunlnx'
     sshkeyfile = '/home/sunlnx/.ssh/id_rsa.pub'
+
+
     copyRemoteToLocal(hostlist, port, user,sshkeyfile)
 
 if __name__ == '__main__':
