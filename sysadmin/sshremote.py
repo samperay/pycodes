@@ -16,11 +16,15 @@ def createSSHClient(server, port, user,sshkey):
 def copyRemoteToLocal(hostlist,port,user,sshkey):
     copyfiles = ['/etc/passwd', '/etc/resolv.conf']
     for server in hostlist:
-        os.mkdir('/tmp/'+server)
+        try:
+            os.mkdir('/tmp/'+server)
+        except FileExistsError as Err:
+            print('Directory Already Exists..copying files')
         ssh=createSSHClient(server,port,user,sshkey)
         scp = SCPClient(ssh.get_transport())
         for file in copyfiles:
             scp.get(file,'/tmp/'+server)
+
 
 def main():
     """Define all tha parameters in the main function"""
