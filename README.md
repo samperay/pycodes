@@ -37,7 +37,7 @@ sysadmin:
 
 **appendConfig_rsyslog.py** appends the entry to rsyslog.conf without any duplications
 
-**revertConfig_rsyslog.py revert from main config file if it exists
+**revertConfig_rsyslog.py** revert from main config file if it exists
 
 
 
