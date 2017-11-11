@@ -40,7 +40,6 @@ sysadmin:
 **revertConfig_rsyslog.py revert from main config file if it exists
 
 
-
 sorting:
 
 simple scripts written for sorting alogorithms using lists
