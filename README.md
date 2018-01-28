@@ -39,6 +39,8 @@ sysadmin:
 
 **revertConfig_rsyslog.py revert from main config file if it exists
 
+**portscanner.py** scans the open port on the hosts.
+
 
 sorting:
 
