@@ -4,8 +4,7 @@ Here are some of the detailed information about the programs I have written. I d
 
 In each program at the beginning, comments are marked to know what this code would be used for.
 
-These examples are being written/tested in python3.5. All programs related to Linux system administration would be kept in sysadmin folder
-Few other programs are just for practice on using python code.
+These examples are being written/tested in python3.5 in Fedora core 25. All programs related to Linux system administration would be kept in sysadmin folder, few others are for practice and few for fun...
 
 ##sysadmin:
 
