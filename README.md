@@ -4,10 +4,13 @@ Here are some of the detailed information about the programs I have written. I d
 
 In each program at the beginning, comments are marked to know what this code would be used for.
 
-These examples are being written/tested in python3.5 in Fedora core 25. All programs related to Linux system administration would be kept in sysadmin folder
+These examples are being written/tested in python3.5. All programs related to Linux system administration would be kept in sysadmin folder
 Few other programs are just for practice on using python code.
 
-sysadmin:
+##sysadmin:
+
+These below scripts can be used for **Linux System Administration** and have provided brief comment on what each code would do.
+If the code seems to be having referenced with more files, shall be created with a directory and will be placed over there.
 
 **getsysinfo.py** Provides the basic information on the system
 
@@ -39,10 +42,19 @@ sysadmin:
 
 **revertConfig_rsyslog.py** revert from main config file if it exists
 
+**portscanner.py** scans the open port on the hosts.
 
-sorting:
+**authlockfix.py** modifies pam module for autolock featuring for failed logins
+
+##sortings:
 
 simple scripts written for sorting alogorithms using lists
 
 **bubble.py** bubble sort alogorithm
 
+**insertion.py** Insetion sort algorithm
+
+##usbops:
+
+This will be considered as a project on **USB Stick Storage Operations** which will check USB attached / Read / Write and so on. 
+As of now there isin't much code being written but when written shall update the README. 
