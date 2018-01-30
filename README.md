@@ -57,4 +57,4 @@ simple scripts written for sorting alogorithms using lists
 ##usbops:
 
 This will be considered as a project on **USB Stick Storage Operations** which will check USB attached / Read / Write and so on. 
-As of now there isin't much code being written but when written shall update the README. 
+As we update on this project more will be documented
