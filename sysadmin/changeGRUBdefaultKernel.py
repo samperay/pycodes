@@ -1,6 +1,10 @@
 # lists the kernel versions and enter to boot to your default kernels
 
 
+def changeGrubDefaultConfig():
+    """Pass the entry to change default booting config for the grub"""
+
+
 def displayKernelsInstalled():
     """Print default kernels installed in system"""
 
@@ -14,7 +18,16 @@ def displayKernelsInstalled():
                 print(count,"\t\t|", line.strip())
                 count+=1
         print("----" * 20)
+        print(count)
 
+    choice = input('Enter your choice to boot kernel by default next time: ')
+    if (int(choice) <= count):
+        print('Choice entered', choice)
+    else:
+        print('No such value as that')
+
+    if count in int(choice):
+        changeGrubDefaultConfig()
 
 if __name__ == '__main__':
     displayKernelsInstalled()
