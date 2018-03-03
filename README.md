@@ -45,6 +45,8 @@ If the code seems to be having referenced with more files, shall be created with
 
 **authlockfix.py** modifies pam module for autolock featuring for failed logins
 
+**changeGRUBdefaultKernel.py** Lets you know the current default GRUB entry and you can set your default GRUB leven on which listed/installed kernels
+
 ## sortings:
 
 simple scripts written for sorting alogorithms using lists
