@@ -1,20 +1,19 @@
 # lists the kernel versions and enter to boot to your default kernels
 
+# this script works only for Redhat 6 or Redhat 7
+
 import platform
 
 def findDefaultGrubLevel():
     """Find out default grub entry"""
     with open('/boot/grub/grub.conf', 'r') as file:
-        # filedata = file.read().replace('default=2','default='+str(choice))
         for line in file.readlines():
             if 'default' in line:
-                currentdefaultgurb = line.split('=')[1]
-                return  currentdefaultgurb
+                currentdefaultgrub = line.split('=')[1]
+                return  currentdefaultgrub
 
 def changeGrubDefaultConfig(choice):
     """Pass the entry to change default booting config for the grub"""
-    filedata = None
-
     defaultgrubentry=findDefaultGrubLevel()
     srcstring='default='+defaultgrubentry
     deststring='default='+choice+"\n"
@@ -38,7 +37,6 @@ def displayKernelsInstalled():
                 print(count,"\t\t|", line.strip())
                 count+=1
         print("----" * 20)
-        #defaultkernelslist.append(count)
 
         for i in range(count):
             defaultkernelslist.append(i)
@@ -56,7 +54,7 @@ if __name__ == '__main__':
         print('Current your GRUB default entry:', findDefaultGrubLevel())
         displayKernelsInstalled()
     else:
-        print('Not supported')
+        print('Not yet supported for Linux Enterprise 7')
 
 
 
