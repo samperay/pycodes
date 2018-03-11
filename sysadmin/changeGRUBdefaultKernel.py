@@ -1,5 +1,7 @@
 # lists the kernel versions and enter to boot to your default kernels
 
+import platform
+
 def findDefaultGrubLevel():
     """Find out default grub entry"""
     with open('/boot/grub/grub.conf', 'r') as file:
@@ -50,8 +52,11 @@ def displayKernelsInstalled():
         print('No such grub entry found')
 
 if __name__ == '__main__':
-    print('Current your GRUB default entry:', findDefaultGrubLevel())
-    displayKernelsInstalled()
+    if platform.platform().split('-')[6][0] == '6':
+        print('Current your GRUB default entry:', findDefaultGrubLevel())
+        displayKernelsInstalled()
+    else:
+        print('Not supported')
 
 
 
