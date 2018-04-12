@@ -1,6 +1,6 @@
 # lists the kernel versions and enter to boot to your default kernels
 
-# this script works only for Redhat 6 or Redhat 7
+# this script works only for Redhat 6 and shal
 
 import platform
 

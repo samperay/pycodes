@@ -47,6 +47,8 @@ If the code seems to be having referenced with more files, shall be created with
 
 **changeGRUBdefaultKernel.py** Lets you know the current default GRUB entry and you can set your default GRUB leven on which listed/installed kernels
 
+**replaceDNSentry.py** you can search and replace your existing DNS entry in /etc/resolv.conf to your new DNS resolver
+
 ## sortings:
 
 simple scripts written for sorting alogorithms using lists
