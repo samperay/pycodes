@@ -48,10 +48,11 @@ intcount = len(netstats.keys())
 
 # To print Network interface names and associated IP
 print("\nNetwork Information")
-print("--------------------")
+print("-----------------------")
 print("Network Interfaces:", intcount)
 
-print("\nInterface names and IP:\n")
+print("\nInterface names and IP:")
+print("--------------------")
 for intips in netstats.keys():
     print(intips,":",netstats[intips][0][1])
 
