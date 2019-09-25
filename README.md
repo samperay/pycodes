@@ -61,3 +61,7 @@ simple scripts written for sorting alogorithms using lists
 
 This will be considered as a project on **USB Stick Storage Operations** which will check USB attached / Read / Write and so on. 
 As we update on this project more will be documented
+
+## py-refresh
+This would contain all the codes from basic to advance level.. this would just remain as a refresher content while you work using python..
+This code is mainly using python version *3.6*
