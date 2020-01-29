@@ -49,19 +49,9 @@ If the code seems to be having referenced with more files, shall be created with
 
 **replaceDNSentry.py** you can search and replace your existing DNS entry in /etc/resolv.conf to your new DNS resolver
 
-## sortings:
+# Python-Interview-Questions
 
-simple scripts written for sorting alogorithms using lists
+This, subfolder consists some of the *python Interview Questions* which are being asked during your interview. One can refer this folder as a python refresher.. 
 
-**bubble.py** bubble sort alogorithm
 
-**insertion.py** Insetion sort algorithm
 
-## usbops:
-
-This will be considered as a project on **USB Stick Storage Operations** which will check USB attached / Read / Write and so on. 
-As we update on this project more will be documented
-
-## py-refresh
-This would contain all the codes from basic to advance level.. this would just remain as a refresher content while you work using python..
-This code is mainly using python version *3.6*
