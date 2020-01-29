@@ -51,7 +51,20 @@ If the code seems to be having referenced with more files, shall be created with
 
 # Python-Interview-Questions
 
-This, subfolder consists some of the *python Interview Questions* which are being asked during your interview. One can refer this folder as a python refresher.. 
+This, subfolder consists some of the *python Interview Questions* which are being asked during your interview. One can refer this folder as a python refresher..
+
+You can practice this code using *juypter* notebook. 
+
+you can start this repo using this below code.
+
+```
+git clone https://github.com/samperay/practice-python.git
+cd interviews
+source bin/activate
+jupyter notebook
+```
+
+Now, by default there would be a tab being opened in your browser. You can practice or work on the code. 
 
 
 
