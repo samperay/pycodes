@@ -6,19 +6,18 @@ As we go along this folder we will write code for below examples which helps us 
 
 ```
 Q1
+Link: https://www.bogotobogo.com/python/python_interview_questions.php
 
 Merging two sorted list
 Get word frequency - initializing dictionary
 Initializing dictionary with list
 map, filter, and reduce
 Write a function f() - yield
-What is __init__.py?
-Build a string with the numbers from 0 to 100, "0123456789101112..."
-Basic file processing: Printing contents of a file - "with open"
+Build a string with the numbers
+Basic file processing
 How can we get home directory using '~' in Python?
 The usage of os.path.dirname() & os.path.basename() - os.path
 using lambda
-classmethod vs staticmethod
 Making a list with unique element from a list with duplicate elements
 What is map?
 What is filter and reduce?
