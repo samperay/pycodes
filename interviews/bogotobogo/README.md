@@ -24,50 +24,29 @@ What is filter and reduce?
 *args and **kwargs
 
 Q2
+Link: https://www.bogotobogo.com/python/python_interview_questions_2.php
 
-Hamming distance
-Floor operation on integers
 Fetching every other item in the list
-Python type() - function
 Dictionary Comprehension
 Sum
-Truncating division
-Python 2 vs Python 3
-len(set)
 Print a list of file in a directory
 Count occurrence of a character in a Python string
 Make a prime number list from (1,100)
 Reversing a string - Recursive
 Reversing a string - Iterative
 Reverse a number
-Output?
-Merging overlapped range
 Conditional expressions (ternary operator)
-Function args
-Unpacking args
-Finding the 1st revision with a bug
-Which one has higher precedence in Python? - NOT, AND , OR
+Function args, Unpacking args
+precedence in Python?
 Decorator(@) - with dollar sign($)
-Multi-line coding
-Recursive binary search
-Iterative binary search
-Pass by reference
-Simple calculator
-iterator class that returns network interfaces
-Converting domain to ip
-How to count the number of instances
-Python profilers - cProfile
-Calling a base class method from a child class that overrides it
-How do we find the current module name?
-Why did changing list 'newL' also change list 'L'?
 Constructing dictionary - {key:[]}
 Colon separated sequence
-Converting binary to integer
-9+99+999+9999+...
-Calculating balance
 Regular expression - findall
 Chickens and pigs
-Highest possible product
+
+Q3
+Link: https://www.bogotobogo.com/python/python_interview_questions_3.php
+
 Copy an object
 Filter
 Products
