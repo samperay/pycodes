@@ -9,6 +9,19 @@ the elements of the list can be compared with the relational operators <, >, etc
 For example, is_sorted([1,2,2]) should return True and is_sorted(['b','a']) should return False.
 """
 
+def is_sorted(l):
+    index=0
+    while index < len(l)-1:
+        if l[index] <= l[index+1]:
+            print('current element smaller than next element')
+        else:
+            return False
+        index+=1
+    return True
+
+result = is_sorted([1,2,2])
+print("List is sorted: ", result)
+
 """
 Exercise 10.7. Two words are anagrams if you can rearrange the letters from one to spell the other.
 Write a function called is_anagram that takes two strings and returns True if they are anagrams.
@@ -18,6 +31,10 @@ Write a function called is_anagram that takes two strings and returns True if th
 Exercise 10.8. The (so-called) Birthday Paradox:
 1. Write a function called has_duplicates that takes a list and returns True if there is any
 element that appears more than once. It should not modify the original list.
+"""
+
+
+"""
 2. If there are 23 students in your class, what are the chances that two of you have the same
 birthday? You can estimate this probability by generating random samples of 23 birthdays and
 checking for matches. Hint: you can generate random birthdays with the randint function
