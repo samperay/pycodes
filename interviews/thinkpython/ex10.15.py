@@ -33,6 +33,17 @@ Exercise 10.8. The (so-called) Birthday Paradox:
 element that appears more than once. It should not modify the original list.
 """
 
+def has_duplicates(l):
+    d={}
+    for element in l:
+        if element in d:
+            return True
+        d[element]=True
+        print(d)
+    return False
+
+result = has_duplicates([1,2,3,4,12,1])
+print("Status of Duplicates in list:", result)
 
 """
 2. If there are 23 students in your class, what are the chances that two of you have the same
