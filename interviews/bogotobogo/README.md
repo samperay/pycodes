@@ -47,34 +47,21 @@ Chickens and pigs
 Q3
 Link: https://www.bogotobogo.com/python/python_interview_questions_3.php
 
-Copy an object
 Filter
 Products
-Pickle
-Overlapped Rectangles
-__dict__
 Fibonacci I - iterative, recursive, and via generator
-Fibonacci II - which method?
-Write a Stack class returning Max item at const time A
-Write a Stack class returning Max item at const time B
-Finding duplicate integers from a list - 1
-Finding duplicate integers from a list - 2
-Finding duplicate integers from a list - 3
-Reversing words 1
-Parenthesis, a lot of them
+Finding duplicate integers from a list
+Reversing words
 Palindrome / Permutations
 Constructing new string after removing white spaces
 Removing duplicate list items
-Dictionary exercise
-printing numbers in Z-shape
 Factorial
-lambda
-lambda with map/filter/reduce
-Number of integer pairs whose difference is K
-iterator vs generator
 Recursive printing files in a given directory
 Bubble sort
-What is GIL (Global Interpreter Lock)?
+
+Q4
+Link: https://www.bogotobogo.com/python/python_interview_questions_4.php
+
 Word count using collections
 Pig Latin
 List of anagrams from a list of words
