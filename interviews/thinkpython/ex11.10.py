@@ -20,8 +20,13 @@ def has_duplicates(l):
         else:
             return False
 
+# alternative code.
+# print([k for k,v in collections.Counter(a).items() if v>1 ])
+
 result = has_duplicates(['brontosaurus','thinkpython','brontosaurus'])
 print("Items repeating in list:", result)
+
+
 
 
 """
