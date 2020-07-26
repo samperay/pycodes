@@ -59,13 +59,30 @@ Exercise 10.9. Write a function called remove_duplicates that takes a list and r
 list with only the unique elements from the original. Hint: they don’t have to be in the same order.
 """
 
+def remove_duplicates(l):
+    newlist=list(set(l))
+    return list(newlist)
+
+result = remove_duplicates([1,2,3,4,4,5,2,1,2,4,3])
+print("After removing all duplicates in the list", result)
+
 """
 Exercise 10.10. Write a function that reads the file words.txt and builds a list with one element
-per word. Write two versions of this function, one using the append method and the other using
+per word.
+
+Write two versions of this function, one using the append method and the other using
 the idiom t = t + [x]. Which one takes longer to run? Why?
-Hint: use the time module to measure elapsed time. Solution: http: // thinkpython. com/
-code/ wordlist. py .
 """
+
+def wordlist():
+    fp = open("E:\projects\practice-python\interviews\/thinkpython\words.txt")
+    wordlist=[]
+    for line in fp.readlines():
+        wordlist.append(line.rsplit('\n')[0])
+    fp.close()
+    print(wordlist)
+
+wordlist()
 
 """
 Exercise 10.11. To check whether a word is in the word list, you could use the in operator, but it
@@ -82,9 +99,20 @@ thinkpython. com/ code/ inlist. py .
 
 """
 Exercise 10.12. Two words are a “reverse pair” if each is the reverse of the other. Write a program
-that finds all the reverse pairs in the word list. Solution: http: // thinkpython. com/ code/
-reverse_ pair.
+that finds all the reverse pairs in the word list.
 """
+
+def reverse_pair(wordlist,word):
+    reverseword=word[::-1]
+
+    for word in wordlist:
+        if reverseword in wordlist:
+            return True
+    return False
+
+result = reverse_pair(['think','python'],'kniht')
+print("Reverse of string", result)
+
 
 """
 Exercise 10.13. Two words “interlock” if taking alternating letters from each forms a new

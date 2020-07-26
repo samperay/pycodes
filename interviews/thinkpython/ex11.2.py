@@ -1,5 +1,5 @@
 def histogram(s):
-    d = dict()
+    d={}
     for c in s:
         if c not in d:
             d[c] = 1
@@ -17,3 +17,10 @@ value.
 """
 
 # write above code using get from dictionaries
+def dictkey(ss):
+    d={}
+    for letter in ss:
+        d[letter]=d.get(letter,0)+1
+    print(d)
+
+dictkey('brontosaurus')
