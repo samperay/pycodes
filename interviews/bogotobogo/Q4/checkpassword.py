@@ -11,8 +11,10 @@ Maximum length of password: 12
 
 import re
 password = ["c#12Z","7@yE*","Zd12$a1","all4@9"]
+# initially, by default start with False
 valid={}.fromkeys(password,False)
 print(valid)
+
 for p in password:
     if len(p) < 6 or len(p) > 12:
         continue

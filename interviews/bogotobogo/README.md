@@ -63,12 +63,9 @@ Q4
 Link: https://www.bogotobogo.com/python/python_interview_questions_4.php
 
 Word count using collections
-Pig Latin
 List of anagrams from a list of words
 lamda with map, filer and reduce functions
-Write a code sending an email using gmail
 histogram 1 : the frequency of characters
-histogram 2 : the frequency of ip-address
 Creating a dictionary using tuples
 Getting the index from a list
 Looping through two lists side by side
@@ -76,26 +73,18 @@ Dictionary sort with two keys : primary / secondary keys
 Writing a file downloaded from the web
 Sorting csv data
 Reading json file
-Sorting class objects
-Parsing Brackets
-Printing full path
-str() vs repr()
 Missing integer from a sequence
-Polymorphism
 Product of every integer except the integer at that index
-What are accessors, mutators, and @property?
-N-th to last element in a linked list
-Implementing linked list
 Removing duplicate element from a list
 List comprehension
-.py vs .pyc
-Binary Tree
-Print 'c' N-times without a loop
-Quicksort
 Dictionary of list
 Creating r x c matrix
 str.isalpha() & str.isdigit()
 Regular expression
+
+Q5
+Link: https://www.bogotobogo.com/python/python_interview_questions_5.php
+
 What is Hashable? Immutable?
 Convert a list to a string
 Convert a list to a dictionary
