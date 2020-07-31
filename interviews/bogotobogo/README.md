@@ -97,33 +97,17 @@ Intersection of two lists
 Dictionary sort by value
 Counting the number of characters of a file as One-Liner
 Find Armstrong numbers from 100-999
-Find GCF (Greatest common divisor)
-Find LCM (Least common multiple)
-Draws 5 cards from a shuffled deck
-Dictionary order by value or by key
 Regular expression - re.split()
-Regular expression : re.match() vs. re.search()
-Regular expression : re.match() - password check
-Regular expression : re.search() - group capturing
-Regular expression : re.findall() - group capturin
-Prime factors : n = products of prime numbers
 Valid IPv4 address
-Sum of strings
 List rotation - left/right
-shallow/deep copy
 Converting integer to binary number
-Creating a directory and a file
-Creating a file if not exists
 Invoking a python file from another
 Sorting IP addresses
-Word Frequency
-Printing spiral pattern from a 2D array - I. Clock-wise
-Printing spiral pattern from a 2D array - II. Counter-Clock-wise
-Find a minimum integer not in the input list
-I. Find longest sequence of zeros in binary representation of an integer
-II. Find longest sequence of zeros in binary representation of an integer - should be surrounded with 1
-Find a missing element from a list of integers
-Find an unpaired element from a list of integers
+
+
+Q6
+Link: https://www.bogotobogo.com/python/python_interview_questions_6.php
+
 Prefix sum : Passing cars
 Prefix sum : count the number of integers divisible by k in range [A,B]
 Can make a triangle?
