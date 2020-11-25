@@ -68,6 +68,6 @@ Now, by default there would be a tab being opened in your browser. You can pract
 
 Here, is the examples folder which are structured into 3 sub-directories. 
 
-- Basic: Contains simple basic programming and some of the most shortest oneliners ( Code 30>>x>>70 )
+- Basic: Contains simple basic programming and some of the most shortest oneliners ( Code 20>>x>>70 )
 - Intermediate: Code which has more complex conditions and logic to achieve a solution ( Code 20>>x>>50 )
 - Advance: OOO concepts & application
