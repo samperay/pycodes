@@ -128,3 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# atom remote sync
+.remote-sync.json
