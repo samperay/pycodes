@@ -1,6 +1,6 @@
 # My Python Learning
 
-Here are some of the detailed information about the programs I have written. I don't consider myself a programmer, But I have started using these little programs as a experiment in using/learning or solving problem myself using Python. I would be glad to accept pointers from others to improve code and make it more efficient. If you would like to suggest me please feel free to email me at **sunlnx@gmail.com**
+Here are some of the detailed information about the programs I have written. I don't consider myself a programmer, But I have started using these little programs as a experiment in using/learning or solving problem myself using Python. I would be glad to accept pointers from others to improve code and make it more efficient. If you would like to contribute, I would suggest you can create a PR at this repository.
 
 In each program at the beginning, comments are marked to know what this code would be used for.
 
@@ -66,5 +66,8 @@ jupyter notebook
 
 Now, by default there would be a tab being opened in your browser. You can practice or work on the code. 
 
+Here, is the examples folder which are structured into 3 sub-directories. 
 
-
+- Basic: Contains simple basic programming and some of the most shortest oneliners ( Code 20>>x>>70 )
+- Intermediate: Code which has more complex conditions and logic to achieve a solution ( Code 20>>x>>50 )
+- Advance: OOO concepts & application
