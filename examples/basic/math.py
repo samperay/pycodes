@@ -16,3 +16,18 @@ print("Sum of even-4",sums)
 # Calculate sum of odd numbers
 #1+3+5+7+9
 print("Sum of odd-1",sum(list(range(1,10,2))))
+
+# Product/Multiply
+# We have an array of integers, and for each index we want to find the product of
+# every integer except the integer at that index
+
+l1=[5,7,3,4]
+output=[]
+for i,e1 in enumerate(l1):
+    prod=1
+    for j,e2 in enumerate(l1):
+        if i!=j:
+            prod*=e2
+    output.append(prod)
+    print("Product List:",output)
+print("Final Result:",prod)
