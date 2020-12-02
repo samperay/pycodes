@@ -10,3 +10,11 @@ def fact():
     return(f)
 
 print("factorial-method-1:",fact())
+
+# Method 2 - recursive
+
+def fact1(n):
+    if n==0: return 1
+    return n*fact1(n-1)
+
+print("factorial-method-2:",fact1(5))
