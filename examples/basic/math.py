@@ -31,3 +31,28 @@ for i,e1 in enumerate(l1):
     output.append(prod)
     print("Product List:",output)
 print("Final Result:",prod)
+
+# List of even numbers using list comprehension
+L=list(range(20))
+even_out=[]
+list_of_even_num=[x for x in L[::2] if x%2 ==0 ]
+print("List of even numbers #1:", list_of_even_num)
+for i,v in enumerate(L):
+    if i%2 == 0:
+        even_out.append(v)
+print("List of even numbers #2:", even_out)
+
+                #   or
+print("List of even numbers #3:",[v for i,v in enumerate(L) if i%2 == 0 ])
+
+
+# Define list of integers divisible by 5
+
+def divisor(n,div):
+    for i in range(n):
+        if i%div == 0:
+            yield i
+
+dividor=5
+number=51
+print("Numbers for multiplicatons of 5:",[i for i in divisor(number,dividor)])
