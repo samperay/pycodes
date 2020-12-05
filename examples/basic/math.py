@@ -45,7 +45,6 @@ print("List of even numbers #2:", even_out)
                 #   or
 print("List of even numbers #3:",[v for i,v in enumerate(L) if i%2 == 0 ])
 
-
 # Define list of integers divisible by 5
 
 def divisor(n,div):
@@ -55,4 +54,12 @@ def divisor(n,div):
 
 dividor=5
 number=51
-print("Numbers for multiplicatons of 5:",[i for i in divisor(number,dividor)])
+print("Numbers for multiplications of 5:",[i for i in divisor(number,dividor)])
+
+# Count the number of times number iterated from the list
+from collections import Counter
+newlist = [1,1,2,3,4,5,3,2,3,4,2,1,2,3]
+counter_items=dict((Counter(newlist).items()))
+# only for keys -> counter_items.keys()
+# only for values -> counter_items.values()
+print("{keys:value}:",dict(counter_items))
