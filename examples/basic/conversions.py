@@ -4,7 +4,7 @@
 L=["Sunil","Kumar"]
 print(" ".join(L))
 
-# Convert list of integers
+# Convert list of integers to string
 L1=list(range(10))
 print(' '.join(str(n) for n in L1))
 
