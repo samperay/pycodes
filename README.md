@@ -6,7 +6,7 @@ In each program at the beginning, comments are marked to know what this code wou
 
 These examples are being written/tested in python3.5. 
 
-## sysadmin:
+## sysadmin
 
 These below scripts can be used for **Linux System Administration** and have provided brief comment on what each code would do.
 If the code seems to be having referenced with more files, shall be created with a directory and will be placed over there.
@@ -48,26 +48,3 @@ If the code seems to be having referenced with more files, shall be created with
 **changeGRUBdefaultKernel.py** Lets you know the current default GRUB entry and you can set your default GRUB leven on which listed/installed kernels
 
 **replaceDNSentry.py** you can search and replace your existing DNS entry in /etc/resolv.conf to your new DNS resolver
-
-# Python-Interview-Questions
-
-This, subfolder consists some of the *python Interview Questions* which are being asked during your interview. One can refer this folder as a python refresher..
-
-You can practice this code using *juypter* notebook. 
-
-you can start this repo using this below code.
-
-```
-git clone https://github.com/samperay/practice-python.git
-cd interviews
-source bin/activate
-jupyter notebook
-```
-
-Now, by default there would be a tab being opened in your browser. You can practice or work on the code. 
-
-Here, is the examples folder which are structured into 3 sub-directories. 
-
-- Basic: Contains simple basic programming and some of the most shortest oneliners ( Code 20>>x>>70 )
-- Intermediate: Code which has more complex conditions and logic to achieve a solution ( Code 20>>x>>50 )
-- Advance: OOO concepts & application
