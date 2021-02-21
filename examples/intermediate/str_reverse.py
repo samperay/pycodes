@@ -19,3 +19,25 @@ for word in r_words:
     print(''.join(word))
 
 print(word)
+
+# Print the revese of the string in an iteratvive method.
+# You can either define the argument in the code or taken from CLI
+print("--------------")
+print("iterative way")
+print("--------------")
+
+import sys
+
+if len(sys.argv)>1:
+  string=str(sys.argv[1])
+else:
+  string="sunil"
+
+# The index of the array of the string starts always from 0
+# 0 to len(str)-1
+strlen=len(string)
+j=strlen-1
+
+while (j>=0):
+    print(string[j])
+    j-=1
