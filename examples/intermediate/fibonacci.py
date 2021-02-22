@@ -14,6 +14,12 @@ def fib2(n):
     if n==1: return 1
     return fib2(n-1)+fib2(n-2)
 
+# Method 3 - sequence
+a,b=0,1
+for i in xrange(0,10):
+    print(a)
+    a,b=b,a+b
+
 # main func
 for i in range(10):
     print("Fib #1:",fib1(i))
