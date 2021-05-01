@@ -11,6 +11,22 @@ The folder is being divided into three sections,
 ## Questions 
 Questions are being posted here, solutions can be found in the folers. 
 
-### Basic
-
-### Intermediate
+- Given the two un-orderd lists, merge two lists, sort and remove the duplicates on the list ?
+- Find the frequency of each words in a string ?
+   - **Hint:** use dictionary !
+- Create a list of the occurance of alphabets from the dictionary. 
+- Create a list of even numbers 
+- Create a square, cube using list 
+   - **Hint:** Create a list using filter and then map the list to the lambda functions !
+- Create a list of prime numbers 
+- Find the factorial of the number 
+- Create a multiplication table 
+- Create a fibonacci numbers 
+- Create recursive functions 
+  - Factorial
+  - Fibonacci
+  - Prime
+- Whats the difference between iterator and generator ?
+- whats the difference between range and xrange ?
+- Explain *args and \**kwargs ?
+- Explain which objects types are mutable and immutable ?

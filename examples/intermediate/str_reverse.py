@@ -20,6 +20,9 @@ for word in r_words:
 
 print(word)
 
+# using list comphrension, we can get the reverse of the string. 
+print(''.join(string[i] for i in range(len(string1-1,-1,-1)))
+
 # Print the revese of the string in an iteratvive method.
 # You can either define the argument in the code or taken from CLI
 print("--------------")
