@@ -16,3 +16,10 @@ print(dict(d))
 
 # convert to a list
 print(list(d))
+
+# Read from dictionary and print values
+elem1={'James': [23, 34], 'Julie': [42, 31], 'Jane': [18], 'Joshua': [55]}
+for k,v in elem1.items():
+    print("Key: ", k)
+    for eachvalue in v:
+        print("value: ",v)
