@@ -47,3 +47,30 @@ for char in string:
 print(vovels_count)
 
 print("\n")
+
+# Search vovels using dictionary
+
+# s="Mississippi borders Tennessee"
+
+# s_to=s.lower()
+# a=e=i=o=u=0
+# vovels='aeiou'
+#
+# d={}.fromkeys(s_to,0)
+# print(d)
+#
+# for c in s_to:
+#     d[c]+=1
+# print(d)
+#
+# for k,v in d.items():
+#     if 'a' in k:
+#         print(k,":",v)
+#     elif 'e' in k:
+#         print(k,":",v)
+#     elif 'i' in k:
+#         print(k,":",v)
+#     elif 'o' in k:
+#         print(k,":",v)
+#     elif 'u' in k:
+#         print(k,":",v)
