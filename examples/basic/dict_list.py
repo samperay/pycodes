@@ -10,4 +10,9 @@ from collections import defaultdict
 d=defaultdict(list)
 for k,v in elem.items():
     d[v].append(k)
+
+# Creating dictionary of list
 print(dict(d))
+
+# convert to a list
+print(list(d))
