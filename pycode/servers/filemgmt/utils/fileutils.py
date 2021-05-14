@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 import os
 class FileOps:
     """
@@ -8,7 +7,7 @@ class FileOps:
     listfiles: list files in the path specified
     listdirectory: list all the directories in path specified
     """
-    # Defaults to users home directoty
+    # Defaults to users home directory
     def __init__(self):
         path = os.path.expanduser("~")
         self.path = path
@@ -31,9 +30,3 @@ class FileOps:
                 else:
                     listofalldirs.append(eachdirectory)
         return listofalldirs
-
-# # Only used for testing !
-#
-# files = FileOps()
-# for eachitem in files.listfiles("/etc"):
-#     print(eachitem)
