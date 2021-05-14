@@ -17,4 +17,3 @@ def displayOutput(listoffiles):
     for eachfile in listoffiles:
         print(eachfile)
     print("-" * 40)
-
