@@ -1,18 +1,26 @@
 #!/usr/bin/python
 import os
+import shutil
+
+
 class FileOps:
     """
     file operations:
 
-    listfiles: list files in the path specified
-    listdirectory: list all the directories in path specified
+    listFiles: list files in the path specified
+    listDirectory: list all the directories in path specified
+    createDirectory: Create a directory in the path specified
+    copyDirectory: Copy directory
+    renameDirectory: Rename directory
+    deleteDirectory: Delete directory
     """
     # Defaults to users home directory
     def __init__(self):
         path = os.path.expanduser("~")
         self.path = path
 
-    def listfiles(self,path):
+    # List the files in the current directory
+    def listFiles(self,path):
         self.path = path
         listofallfiles = []
         for _,_,listoffiles in os.walk(self.path):
@@ -20,7 +28,8 @@ class FileOps:
                 listofallfiles.append(eachfile)
         return listofallfiles
 
-    def listdirectory(self,path):
+    # List the directories in the present working directory
+    def listDirectory(self,path):
         self.path = path
         listofalldirs = []
         for _,listofdirs,_ in os.walk(self.path):
@@ -30,3 +39,45 @@ class FileOps:
                 else:
                     listofalldirs.append(eachdirectory)
         return listofalldirs
+
+    # Create Directory
+    def createDirectory(self, directory):
+        self.directory = directory
+        try:
+            if os.makedirs(self.directory):
+                return True
+        except OSError as error:
+            print(error)
+        return False
+
+    # Copy Directory
+    def copyDirectory(self,directory, newdirectory):
+        self.directory = directory
+        self.newdirectory = newdirectory
+        try:
+            if shutil.copytree(self.directory,self.newdirectory):
+                return True
+        except OSError as error:
+            print(error)
+        return False
+
+    # Rename Directory
+    def renameDirectory(self,directory,newdirectory):
+        self.directory = directory
+        self.newdirectory = newdirectory
+        try:
+            if shutil.move(self.directory,self.newdirectory):
+                return True
+        except OSError as error:
+            print(error)
+        return False
+
+    # Delete Directory
+    def deleteDirectory(self,directory):
+        self.directory = directory
+        try:
+            if os.rmdir(self.directory):
+                return True
+        except OSError as error:
+            print(error)
+        return False
