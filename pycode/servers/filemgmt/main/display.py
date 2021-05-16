@@ -32,7 +32,7 @@ def displayFileOperations(choice,status):
         if status:
             print("Directory CREATE Operation Success !")
         else:
-            print("Directory CREATE Failed !")
+            print("Directory already exists, CREATE Failed !")
     elif choice == 4:
         if status:
             print("Directory COPY Operation Success !")

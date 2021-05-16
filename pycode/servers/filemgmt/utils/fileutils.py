@@ -40,40 +40,48 @@ class FileOps:
                     listofalldirs.append(eachdirectory)
         return listofalldirs
 
+    # Verify directory exists
+    def directoryExists(self, directory):
+        self.directory = directory
+        if os.path.isdir(self.directory):
+            return True
+        else:
+            return False
+
     # Create Directory
     def createDirectory(self, directory):
         self.directory = directory
         try:
-            if os.makedirs(self.directory):
-                return True
+            os.makedirs(self.directory)
+            return True
         except OSError as error:
             print(error)
-        return False
+            return False
 
     # Copy Directory
-    def copyDirectory(self,directory, newdirectory):
+    def copyDirectory(self, directory, newdirectory):
         self.directory = directory
         self.newdirectory = newdirectory
         try:
-            if shutil.copytree(self.directory,self.newdirectory):
+            if shutil.copytree(self.directory, self.newdirectory):
                 return True
         except OSError as error:
             print(error)
         return False
 
     # Rename Directory
-    def renameDirectory(self,directory,newdirectory):
+    def renameDirectory(self, directory, newdirectory):
         self.directory = directory
         self.newdirectory = newdirectory
         try:
-            if shutil.move(self.directory,self.newdirectory):
+            if shutil.move(self.directory, self.newdirectory):
                 return True
         except OSError as error:
             print(error)
         return False
 
     # Delete Directory
-    def deleteDirectory(self,directory):
+    def deleteDirectory(self, directory):
         self.directory = directory
         try:
             if os.rmdir(self.directory):

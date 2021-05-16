@@ -1,6 +1,5 @@
 #!/usr/bin/python
 import os.path
-
 from pycode.servers.filemgmt.utils.fileutils import FileOps
 import pycode.servers.filemgmt.main.display as display
 
@@ -23,7 +22,7 @@ def main():
         directoryname  = input("Enter name of the directory to be created in current path: ")
         createdir = os.path.join(parentdirectory, directoryname)
         status = files.createDirectory(createdir)
-        display.displayFileOperations(choice,status)
+        display.displayFileOperations(choice, status)
     elif choice == 4:
         srcdirectory = input("source directory: ")
         dstdirectory = input("destination directory to be copied: ")
