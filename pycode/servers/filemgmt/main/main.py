@@ -2,9 +2,11 @@
 import os.path
 from pycode.servers.filemgmt.utils.fileutils import FileOps
 import pycode.servers.filemgmt.main.display as display
+from pycode.servers.filemgmt.utils.fileattrs import FileAttributes
 
 def main():
     files = FileOps()
+    fileattributes = FileAttributes()
 
     choice = display.displayMenu()
     if choice == 1:
@@ -34,9 +36,19 @@ def main():
         status = files.renameDirectory(srcdirectory, dstdirectory)
         display.displayFileOperations(choice, status)
     elif choice == 6:
+        print("Need to write code for moving directory")
+    elif choice == 7:
         srcdirectory = input("directory to be deleted: ")
         status = files.deleteDirectory(srcdirectory)
-        display.displayFileOperations(choice,status)
+        display.displayFileOperations(choice, status)
+    elif choice == 8:
+        filename = input("Enter your filename: ")
+        filename_uid = fileattributes.getOwnerNameOfFile(filename)
+        display.displayFileAttributes(filename_uid,"uid")
+    elif choice == 9:
+        filename = input("Enter your filename: ")
+        filename_gid = fileattributes.getGroupNameOfFile(filename)
+        display.displayFileAttributes(filename_gid,"gid")
     else:
         print("Invalid Choice, exiting")
         exit(1)

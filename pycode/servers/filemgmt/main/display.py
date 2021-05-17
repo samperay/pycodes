@@ -12,6 +12,9 @@ def displayMenu():
     print("'5.' Rename Directory ")
     print("'6.' Move Directory ")
     print("'7.' Delete Directory ")
+    print("--- Display file attributes ---")
+    print("'8.' List UID: ")
+    print("'9.' List GID: ")
     choice = int(input("Enter your choice: "))
     return choice
 
@@ -24,7 +27,7 @@ def displayListOfFilesInDirectory(listoffiles):
         print(eachfile)
     print("-" * 60)
 
-def displayFileOperations(choice,status):
+def displayFileOperations(choice, status):
     """
     Display list of file operations to be performed in the directory
     """
@@ -53,3 +56,10 @@ def displayFileOperations(choice,status):
             print("Directory DELETE Operation Success !")
         else:
             print("Directory DELETE Operation Failed !")
+
+
+def displayFileAttributes(retval, params):
+    if params == 'uid':
+        print("UID Name: "%retval)
+    elif params == 'gid':
+        print("GID Name: "%retval)

@@ -48,7 +48,7 @@ class FileOps:
         else:
             return False
 
-    # Create Directory
+    # Create Directory   
     def createDirectory(self, directory):
         self.directory = directory
         try:
