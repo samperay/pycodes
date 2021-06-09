@@ -29,7 +29,7 @@ class FileOps:
         return listofallfiles
 
     # List the directories in the present working directory
-    def listDirectory(self,path):
+    def listDirectory(self, path):
         self.path = path
         listofalldirs = []
         for _,listofdirs,_ in os.walk(self.path):
@@ -48,7 +48,7 @@ class FileOps:
         else:
             return False
 
-    # Create Directory   
+    # Create Directory
     def createDirectory(self, directory):
         self.directory = directory
         try:
