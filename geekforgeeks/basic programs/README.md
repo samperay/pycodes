@@ -11,6 +11,6 @@
 - [x] Python Program for n-th Fibonacci number
 - [ ] Python Program for How to check if a given number is Fibonacci number?
 - [x] Python Program for n\’th multiple of a number in Fibonacci Series
-- [ ] Program to print ASCII Value of a character
+- [x] Program to print ASCII Value of a character
 - [x] Python Program for Sum of squares of first n natural numbers
 - [x] Python Program for cube sum of first n natural numbers
