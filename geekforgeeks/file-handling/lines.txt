@@ -1,0 +1,5 @@
+this is line1
+this is line2
+this is line3
+there are totally three lines in this file
+this is line1 
