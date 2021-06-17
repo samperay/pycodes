@@ -1,6 +1,5 @@
 import unittest
-from pycode.unittesting import calculate
-
+from pycode.unittests import  calculate
 
 class Add(unittest.TestCase):
     # testing int
