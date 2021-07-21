@@ -2,12 +2,12 @@
 - [x] Python program to add two numbers
 - [x] Maximum of two numbers in Python
 - [x] Python Program for factorial of a number
-- [ ] Python Program for simple interest
+- [x] Python Program for simple interest
 - [ ] Python Program for compound interest
 - [ ] Python Program to check Armstrong Number
-- [ ] Python Program for Program to find area of a circle
-- [ ] Python program to print all Prime numbers in an Interval
-- [ ] Python program to check whether a number is Prime or not
+- [x] Python Program for Program to find area of a circle
+- [x] Python program to print all Prime numbers in an Interval
+- [x] Python program to check whether a number is Prime or not
 - [x] Python Program for n-th Fibonacci number
 - [ ] Python Program for How to check if a given number is Fibonacci number?
 - [x] Python Program for n\’th multiple of a number in Fibonacci Series
