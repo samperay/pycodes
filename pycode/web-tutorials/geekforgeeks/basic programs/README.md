@@ -1,0 +1,16 @@
+# Basic Programs
+- [x] Python program to add two numbers
+- [x] Maximum of two numbers in Python
+- [x] Python Program for factorial of a number
+- [x] Python Program for simple interest
+- [ ] Python Program for compound interest
+- [ ] Python Program to check Armstrong Number
+- [x] Python Program for Program to find area of a circle
+- [x] Python program to print all Prime numbers in an Interval
+- [x] Python program to check whether a number is Prime or not
+- [x] Python Program for n-th Fibonacci number
+- [ ] Python Program for How to check if a given number is Fibonacci number?
+- [x] Python Program for n\’th multiple of a number in Fibonacci Series
+- [x] Program to print ASCII Value of a character
+- [x] Python Program for Sum of squares of first n natural numbers
+- [x] Python Program for cube sum of first n natural numbers
