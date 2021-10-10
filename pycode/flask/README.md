@@ -2,9 +2,10 @@
 
 ## Web Dev Projects 
 
-### Hello-World 
+### tutorialpoint
 
-Tutorial project to learn flask 
+we would be using the basic code from tutorialspoint. 
+[Flask Basic Tutorial](https://www.tutorialspoint.com/flask/index.htm)
 
 ### blog 
 
