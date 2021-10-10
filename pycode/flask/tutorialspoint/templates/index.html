@@ -1,7 +1,10 @@
 <html>
-    <title>Hello world</title>
-    <body>
-        <h1> Hello World </h1>
-        <p> This information is rendered from Hello world</p>
-    </body>
+   <head>
+      <script type = "text/javascript" 
+         src = "{{ url_for('static', filename = 'hello.js') }}" ></script>
+   </head>
+   
+   <body>
+      <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+   </body>
 </html>
