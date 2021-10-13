@@ -266,3 +266,4 @@ dmypy.json
 >>>>>>> 8423323cf1c2a37fbc26135d578fd2ba4f93e18e
 
 .DS_Store
+*.db
