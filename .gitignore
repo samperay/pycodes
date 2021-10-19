@@ -267,3 +267,4 @@ dmypy.json
 
 .DS_Store
 *.db
+.idea
