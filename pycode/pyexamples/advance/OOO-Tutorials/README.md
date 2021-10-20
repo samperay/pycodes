@@ -23,3 +23,11 @@ instance method: used to modify the instance attributes of the class
 static methods: do not modify the instance attributes of the class, modify class attributes.
 
 init methods: invoked at the time of creation of object
+
+## Naming convention in python
+
+```
+Public => memberName
+protected => _memberName
+private => __memberName
+```
